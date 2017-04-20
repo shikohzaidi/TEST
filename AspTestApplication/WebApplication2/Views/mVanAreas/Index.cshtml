@@ -1,0 +1,51 @@
+﻿@model IEnumerable<WebApplication2.Models.mVanArea>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.VanAreaName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Creationdate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Isactive)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Userid)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.VanAreaName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Creationdate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Isactive)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Userid)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.VanAreaId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.VanAreaId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.VanAreaId })
+        </td>
+    </tr>
+}
+
+</table>

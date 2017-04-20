@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBUrbanHealthModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="mVanArea">
+    <Key>
+      <PropertyRef Name="VanAreaId" />
+    </Key>
+    <Property Name="VanAreaId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="VanAreaName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Creationdate" Type="DateTime" Precision="0" />
+    <Property Name="Isactive" Type="Boolean" />
+    <Property Name="Userid" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="DBUrbanHealthEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="mVanAreas" EntityType="Self.mVanArea" />
+  </EntityContainer>
+</Schema>

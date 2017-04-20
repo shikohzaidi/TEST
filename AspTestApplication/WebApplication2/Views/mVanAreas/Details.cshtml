@@ -1,0 +1,50 @@
+﻿@model WebApplication2.Models.mVanArea
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>mVanArea</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.VanAreaName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VanAreaName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Creationdate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Creationdate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Isactive)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Isactive)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Userid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Userid)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.VanAreaId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

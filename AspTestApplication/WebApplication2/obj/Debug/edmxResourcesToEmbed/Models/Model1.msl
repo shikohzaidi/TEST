@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DBUrbanHealthModelStoreContainer" CdmEntityContainer="DBUrbanHealthEntities">
+    <EntitySetMapping Name="mVanAreas">
+      <EntityTypeMapping TypeName="DBUrbanHealthModel.mVanArea">
+        <MappingFragment StoreEntitySet="mVanArea">
+          <ScalarProperty Name="VanAreaId" ColumnName="VanAreaId" />
+          <ScalarProperty Name="VanAreaName" ColumnName="VanAreaName" />
+          <ScalarProperty Name="Creationdate" ColumnName="Creationdate" />
+          <ScalarProperty Name="Isactive" ColumnName="Isactive" />
+          <ScalarProperty Name="Userid" ColumnName="Userid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
